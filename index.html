@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="stylesheet" href="./vendor/bootstrap.min.css">
+
+    <title>VuelaLejos App</title>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div ng-app="VuelaLejosApp">
+        <div ng-controller="Controller">
+          <div class="container">
+              <h2 class="title">Bienvenido a VuelaLejos App</h2>
+              <h4 class="servicios">
+                Estas a punto de vivir tu sueño, podrás hacer reservas de vuelos, comprar tiquetes,
+                y disfrutar de las mejores ofertas porque pensamos en ti y en tu bolsillo!!!
+              </h4>
+              <h4 class="registro">Registrate ahora!!! No esperes mas... Es hora de vivir tu sueño !!!</h4>
+            <div class="boton">
+              <button class="btn btn btn-info miBoton" ng-click="registrateahoraredirect()">REGISTRATE AHORA</button>
+            </div>
+            <div class="boton">
+              <button class="btn btn btn-info miBoton" ng-click="yaestoyregistradoredirect()">YA ESTOY REGISTRADO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./vendor/angular.min.js"></script>
+    <script src="./scripts/controllers/index.js"></script>
+  </body>
+</html>
