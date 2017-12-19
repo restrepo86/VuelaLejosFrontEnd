@@ -8,14 +8,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <div ng-app="registrarApp" ng-controller="registrarCtrl">
+      <form class="formularioRegistro">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputNombre">Nombre</label>
+            <input class="form-control" ng-model="inputNombre" placeholder="Maria Camila">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputApellido">Apellidos</label>
+            <input class="form-control" ng-model="inputApellido" placeholder="Martinez Gomez">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputUsuario">Usuario</label>
+            <input class="form-control" ng-model="inputUsuario" placeholder="restrepo0245">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputContrasena">Contraseña</label>
+            <input type="password" class="form-control" ng-model="inputContrasena" placeholder="Contraseña">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputConfirmarContrasena">Repita Nuevamente La Contraseña</label>
+            <input type="password" class="form-control" ng-model="inputConfirmarContrasena" placeholder="Contraseña">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputFechaNacimiento">Fecha de Nacimiento</label>
+            <input class="form-control" ng-model="inputFechaNacimiento" placeholder="1992-12-01">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputSexo">Sexo</label>
+            <select ng-model="inputSexo" class="form-control">
+              <option>...</option>
+              <option selected>Masculino</option>
+              <option selected>Femenino</option>
+            </select>
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="inputDireccion">Direccion</label>
+            <input type="text" class="form-control" ng-model="inputDireccion" placeholder="Cra 80 # 59-31">
+          </div>
+          <div class="form-group">
+            <label for="inputCorreo">Correo Electronico</label>
+            <input type="email" class="form-control" ng-model="inputCorreo" placeholder="restrepo86@lavida.com">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCiudad">Ciudad</label>
+              <input type="text" class="form-control" ng-model="inputCiudad">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputEdad">Edad</label>
+              <input type="text" class="form-control" ng-model="inputEdad">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" ng-click="registrarmeClick()">Registrame Ahora</button>
+        </form>
+
+    </div>
+
     <script src="../vendor/angular.min.js"></script>
-    <script src="../vendor/bootstrap.js"></script>
-    <script src="../vendor/bootstrap.bundle.js"></script>
-    <script src="../vendor/popper.min.js"></script>
     <script src="../vendor/jquery-3.2.1.slim.min.js"></script>
-    <script src="../scripts/controllers/jugar.js"></script>
+    <script src="../vendor/popper.min.js"></script>
+    <script src="../vendor/bootstrap.js"></script>
+    <script src="../scripts/controllers/registrateahora.js"></script>
   </body>
 </html>

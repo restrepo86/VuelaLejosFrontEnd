@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
+    <div class="jumbotron text-center">
+      <div ng-app="consultasApp">
+        <div ng-controller="consultasCtrl">
+          <div class="container">
+              <h4 class="servicios">
+                Ahora elige la opcion consulta de vuelos para conocer nuestras ofertas
+              </h4>
+            <div class="boton">
+              <button class="btn btn btn-info miBoton" ng-click="functionConsultasVuelosRedireccionar()">Consultas de Vuelos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script src="../vendor/angular.min.js"></script>
+    <script src="../vendor/jquery-3.2.1.slim.min.js"></script>
+    <script src="../vendor/popper.min.js"></script>
+    <script src="../vendor/bootstrap.js"></script>
+    <script src="../scripts/controllers/consultas.js"></script>
   </body>
 </html>

@@ -25,3 +25,14 @@
 .volverInicio {
   margin-top: 40px;
 }
+
+.formularioRegistro {
+  padding-top: 50px;
+  padding-right: 150px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+.form-group col-md-6{
+  text-align: center;
+  margin: 0auto;
+}
